@@ -19,6 +19,7 @@ Console.WriteLine("First number is not a quad of second number");
 }
 */
 // Задача 3.
+/*
 Console.Write("Input number of weekday  ");
 int day = Convert.ToInt32(Console.ReadLine());
 if(day > 7 || day < 1)
@@ -41,3 +42,37 @@ if(day == 1)
    if(day == 7)
     Console.WriteLine("It is Sunday"); 
    }
+   */
+   // Задача 4.
+/*
+   Console.Write("Input integer number: ");
+int num = Convert.ToInt32(Console.ReadLine());
+int current;
+if(num < 0)
+{
+  current = num;
+  num = num * (-1);
+  }
+  else
+  {
+    current = num * (-1);
+  }
+while(current <= num)
+{
+  Console.Write(current + " ");
+  current++;
+  //current = current + 1;
+}
+*/
+// задача 5.
+/*
+Console.Write("Input integer number: ");
+int num = Convert.ToInt32(Console.ReadLine());
+if(num < 100 || num > 999)
+    Console.WriteLine("Incorrect number: ");
+    else 
+    {
+      int ostatoc = num % 10;
+      Console.WriteLine("Resulted number is " + ostatoc);
+    }
+*/
