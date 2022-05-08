@@ -38,6 +38,7 @@ if(num == secondnum||secondnum == thirdnum)
      }
  */
  // Задача 3.
+ /*
  Console.Write("Input integer number: ");
 int num = Convert.ToInt32(Console.ReadLine());
 int chast = 0; 
@@ -46,9 +47,20 @@ if(num == chast*2)
    Console.WriteLine("Number is even.");
    else 
    Console.WriteLine("Number is odd.");
-
-
-  
+*/
+// Задача 4.
+//
+Console.Write("Input integer number: ");
+int num = Convert.ToInt32(Console.ReadLine());
+int current = 0;
+if(num < 0)
+    Console.WriteLine("Number is negative.");
+ while(current < num-1)
+{
+   current = current + 2;
+     Console.Write(current + " ");
+      
+   }
 
   
       
