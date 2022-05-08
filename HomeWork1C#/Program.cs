@@ -15,6 +15,7 @@ if(num == secondnum)
     }
     */
    // Задача 2.
+   /*
 
 Console.Write("Input integer number: ");
 int num = Convert.ToInt32(Console.ReadLine());
@@ -35,7 +36,20 @@ if(num == secondnum||secondnum == thirdnum)
          Maxnumber=thirdnum; 
          Console.WriteLine("Max number is " + Maxnumber);
      }
- 
+ */
+ // Задача 3.
+ Console.Write("Input integer number: ");
+int num = Convert.ToInt32(Console.ReadLine());
+int chast = 0; 
+chast = num/2;
+if(num == chast*2)
+   Console.WriteLine("Number is even.");
+   else 
+   Console.WriteLine("Number is odd.");
+
+
+  
+
   
       
 
