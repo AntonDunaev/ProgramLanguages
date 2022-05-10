@@ -76,3 +76,17 @@ if(num < 100 || num > 999)
       Console.WriteLine("Resulted number is " + ostatoc);
     }
 */
+//Classwork 2.
+void ShowNumber()
+{
+  int number = new Random().Next(10,99);
+  if(number/10 > num%10)
+  {
+    Console.WriteLine(number/10);
+  }
+  else
+  {
+    Console.WriteLine(num%10);
+  }
+}
+ShowNumber();
