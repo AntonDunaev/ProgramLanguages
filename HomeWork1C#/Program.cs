@@ -50,6 +50,7 @@ if(num == chast*2)
 */
 // Задача 4.
 //
+/*
 Console.Write("Input integer number: ");
 int num = Convert.ToInt32(Console.ReadLine());
 int current = 0;
@@ -61,7 +62,7 @@ if(num < 0)
      Console.Write(current + " ");
       
    }
-
+*/
   
       
 
