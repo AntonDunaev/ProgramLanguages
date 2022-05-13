@@ -35,19 +35,22 @@ int a = ShowNumber();
 Console.WriteLine(a);
 */
 // Задача 1.
+
 void DontShowSecond()
 {
     int num = new Random().Next(100, 999);
     int firstNum = num / 100;
     int secondNum = num % 10;
+    int num3 = firstNum * 10 + secondNum;
     Console.Write(num + "->");
-    Console.Write(firstNum);
-    Console.Write(secondNum);
-}
+    Console.Write(num3);
+    }
 Console.WriteLine("Задача 1. Не показовать второе число.");
 DontShowSecond();
+
 // Задача 2.
-/*int DelitNeDelit()
+/*
+int DelitNeDelit()
 {
     int firstNum = new Random().Next(80, 100);
     int secondNum = new Random().Next(1, 20);
@@ -67,8 +70,8 @@ DontShowSecond();
 }
 int a = DelitNeDelit();
 Console.WriteLine(a);
-*/
 //Console.Write("Input first integer number: ");
 //int num = Convert.ToInt32(Console.ReadLine());
 //Console.Write("Input second integer number: ");
 //int secondnum = Convert.ToInt32(Console.ReadLine());
+*/
