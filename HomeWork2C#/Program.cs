@@ -35,7 +35,7 @@ int a = ShowNumber();
 Console.WriteLine(a);
 */
 // Задача 1.
-
+/*
 void DontShowSecond()
 {
     int num = new Random().Next(100, 999);
@@ -47,31 +47,24 @@ void DontShowSecond()
     }
 Console.WriteLine("Задача 1. Не показовать второе число.");
 DontShowSecond();
-
+*/
 // Задача 2.
-/*
-int DelitNeDelit()
+
+void DelitNeDelit()
 {
-    int firstNum = new Random().Next(80, 100);
-    int secondNum = new Random().Next(1, 20);
-    int chastnoe = firstNum / secondNum;
-    int delimoe = chastnoe * secondNum;
+    Console.WriteLine("Input first integer number: ");
+    int firstNum = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("Input second integer number: ");
+    int secondNum = Convert.ToInt32(Console.ReadLine());
     int ostatok = firstNum % secondNum;
-    if (firstNum == delimoe)
+    if (firstNum % secondNum == 0)
     {
-        Console.WriteLine("Первое число делится на второе без остатка. Частное равно  ");
-        return chastnoe;
+        Console.WriteLine(firstNum + "is multiple of " + secondNum);
     }
     else
     {
-        Console.WriteLine("Первое число делится на второе c остатком ");
-        return  ostatok;
-            }
+        Console.WriteLine(firstNum + "is not multiple of " + secondNum);
+        Console.WriteLine("remain is " + ostatok);
+    }
 }
-int a = DelitNeDelit();
-Console.WriteLine(a);
-//Console.Write("Input first integer number: ");
-//int num = Convert.ToInt32(Console.ReadLine());
-//Console.Write("Input second integer number: ");
-//int secondnum = Convert.ToInt32(Console.ReadLine());
-*/
+DelitNeDelit();
