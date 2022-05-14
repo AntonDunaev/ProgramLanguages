@@ -70,6 +70,7 @@ void DelitNeDelit()
 DelitNeDelit();
 */
 // Задача 3.
+/*
 void Multiplicity(int num)
 {
      if (num % 7 == 0 && num % 23 == 0)
@@ -84,4 +85,21 @@ void Multiplicity(int num)
 Console.Write("Input integer number: ");
 int num = Convert.ToInt32(Console.ReadLine());
 Multiplicity(num);
+*/
+// Задача 4.
+void Sqr(int n1, int n2)
+{
+    if (n1 == n2*n2)
+    {
+        Console.WriteLine("Yes");
+    }
+    else Console.WriteLine("No");
+}
+Console.WriteLine("Input first integer number: ");
+int firstNum = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Input second integer number: ");
+int secondNum = Convert.ToInt32(Console.ReadLine());
+Sqr(firstNum, secondNum);
+
+
 
