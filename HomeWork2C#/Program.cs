@@ -44,6 +44,29 @@ Console.WriteLine("Задача 13. Показать третье число.");
 Console.WriteLine("Введите целое число: ");
 string num = Console.ReadLine();
 ShowThird(num);*/
+//Задача 15. Написать программу про цифру и день недели.
+void DenNedeli()
+{
+    Console.WriteLine("Введите число обозначающее день недели: ");
+    int num = Convert.ToInt32(Console.ReadLine());
+    if (num < 1 || num > 7)
+    {
+        Console.WriteLine("Неверное число. В неделе всего 7 дней");
+    }
+    else
+    {
+        if (num > 0 && num < 6) 
+        {
+            Console.WriteLine("К сожалению будний день. (");
+        }
+        else
+        {
+           Console.WriteLine("Ура! выходные! Идём на рыбалку )))"); 
+        }
+    }
+}
+DenNedeli();
+
 
 
 
