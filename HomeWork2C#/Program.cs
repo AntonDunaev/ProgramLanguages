@@ -49,7 +49,7 @@ Console.WriteLine("Задача 1. Не показовать второе чис
 DontShowSecond();
 */
 // Задача 2.
-
+/*
 void DelitNeDelit()
 {
     Console.WriteLine("Input first integer number: ");
@@ -68,3 +68,20 @@ void DelitNeDelit()
     }
 }
 DelitNeDelit();
+*/
+// Задача 3.
+void Multiplicity(int num)
+{
+     if (num % 7 == 0 && num % 23 == 0)
+    {
+       Console.Write(num + " is multiple of 7 and 23"); 
+    }
+    else
+    {
+       Console.Write(num + " is NOT multiple of 7 and 23");
+    }
+}
+Console.Write("Input integer number: ");
+int num = Convert.ToInt32(Console.ReadLine());
+Multiplicity(num);
+
