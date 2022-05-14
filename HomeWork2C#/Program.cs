@@ -87,6 +87,7 @@ int num = Convert.ToInt32(Console.ReadLine());
 Multiplicity(num);
 */
 // Задача 4.
+/*
 void Sqr(int n1, int n2)
 {
     if (n1 == n2*n2)
@@ -100,6 +101,7 @@ int firstNum = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Input second integer number: ");
 int secondNum = Convert.ToInt32(Console.ReadLine());
 Sqr(firstNum, secondNum);
+*/
 
 
 
