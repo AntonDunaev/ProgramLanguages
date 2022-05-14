@@ -77,16 +77,18 @@ if(num < 100 || num > 999)
     }
 */
 //Classwork 2.
+
 void ShowNumber()
 {
-  int number = new Random().Next(10,99);
-  if(number/10 > num%10)
-  {
-    Console.WriteLine(number/10);
-  }
-  else
-  {
-    Console.WriteLine(num%10);
-  }
+  int num = new Random().Next(10, 99);
+  Console.Write(num + "->");
+    if (num / 10 <= num % 10)
+    {
+        Console.Write(num % 10);
+    }
+    else
+    {
+        Console.Write(num / 10);
+    }
 }
 ShowNumber();
