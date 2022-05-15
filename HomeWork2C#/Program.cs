@@ -10,13 +10,13 @@
     }
 Console.WriteLine("Задача 10. Показать второе число.");
 ShowSecond();*/
-// Задача 11. Вывести третью цифру и сообщить, что её нет.
-/*void ShowThird(int numbers)
+// Задача 13. Вывести третью цифру и сообщить, что её нет.
+void ShowThird(string numbers)
 {
     int length = numbers.Length;
     if (length>=3)
     {
-        Console.WriteLine(numbers[2]);
+        Console.WriteLine("Третье число: " + numbers[2]);
     }
     else
     {
@@ -25,27 +25,11 @@ ShowSecond();*/
        }
 Console.WriteLine("Задача 13. Показать третье число.");
 Console.WriteLine("Введите целое число: ");
-int num = Convert.ToInt32(Console.ReadLine());
-ShowThird(num);*/
-
-/*string ShowThird(string[] numbers)
-{
-    int length = numbers.Length;
-    if (length>=3)
-    {
-        Console.WriteLine(numbers[2]);
-    }
-    else
-    {
-        Console.WriteLine("Третьей цифры нет");
-    }
-}
-Console.WriteLine("Задача 13. Показать третье число.");
-Console.WriteLine("Введите целое число: ");
 string num = Console.ReadLine();
-ShowThird(num);*/
+ShowThird(num);
+
 //Задача 15. Написать программу про цифру и день недели.
-void DenNedeli()
+/*void DenNedeli()
 {
     Console.WriteLine("Введите число обозначающее день недели: ");
     int num = Convert.ToInt32(Console.ReadLine());
@@ -65,7 +49,7 @@ void DenNedeli()
         }
     }
 }
-DenNedeli();
+DenNedeli();*/
 
 
 
