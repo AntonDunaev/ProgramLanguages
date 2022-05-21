@@ -25,7 +25,7 @@ else
 Console.WriteLine("номер четверти " + qvartNum);
 */
 // Задача 2. Определить координаты точки по четверти
-void FindDot(int q)
+/*void FindDot(int q)
 {
     if(q == 1)
     Console.WriteLine("Координаты точек в заданной области находятся в пределах :x>0 и y >0");
@@ -41,6 +41,25 @@ void FindDot(int q)
 Console.Write("Введите номер четверти: ");
 int qvartNum = Convert.ToInt32(Console.ReadLine());
 FindDot(qvartNum);
+*/
+//Задача 3. Найти расстояние между точками по их координатам.
+double FindDistance(int x, int y, int z, int s)
+{
+    return Math.Sqrt((z-x)*(z-x) + (s - y)*(s - y));    
+}
+Console.Write("Введите значение  по оси Х для первой точки: ");
+int xFirstDot = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите значение по оси Y для первой точки: ");
+int yFirstDot = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите значение  по оси Х для второй точки: ");
+int xSecondDot = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите значение по оси Y для второй точки: ");
+int ySecondDot = Convert.ToInt32(Console.ReadLine());
+double dist = FindDistance(xFirstDot, yFirstDot, xSecondDot, ySecondDot);
+Console.WriteLine("Расстояние от первой тоски до второй " + dist);
+
+
+
 
 
 
