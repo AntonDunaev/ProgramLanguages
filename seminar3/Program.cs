@@ -43,6 +43,7 @@ int qvartNum = Convert.ToInt32(Console.ReadLine());
 FindDot(qvartNum);
 */
 //Задача 3. Найти расстояние между точками по их координатам.
+/*
 double FindDistance(int x, int y, int z, int s)
 {
     return Math.Sqrt((z-x)*(z-x) + (s - y)*(s - y));    
@@ -57,6 +58,21 @@ Console.Write("Введите значение по оси Y для второй
 int ySecondDot = Convert.ToInt32(Console.ReadLine());
 double dist = FindDistance(xFirstDot, yFirstDot, xSecondDot, ySecondDot);
 Console.WriteLine("Расстояние от первой тоски до второй " + dist);
+*/
+// Задача 3. Вывести таблицу квадратов
+void qardNumber(int x)
+{
+    int count = 1;
+    Console.Write(x + " -> ");
+    while(count <= x)
+    {
+    Console.Write(count*count + ", ");
+    count ++;
+    }
+}
+Console.Write("Введите натуральное число ");
+int num = Convert.ToInt32(Console.ReadLine());
+qardNumber(num);
 
 
 
