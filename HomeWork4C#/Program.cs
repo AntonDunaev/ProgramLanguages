@@ -32,8 +32,32 @@ int CountElements(int[] array)
    // Console.WriteLine("Количество чётных элементов: " + evenCount);
    // Console.WriteLine("Количество нечётных элементов: " + oddCount);
 }
+
+int SumOfElements(int[] array)
+{
+    int evenSum = 0;  //сумма четных чисел
+    int oddSum = 0; //сумма нечетных чисел
+
+    for(int i = 1; i < array.Length; i++)
+    {
+        if(i % 2 == 0)
+        evenSum = evenSum + array[i];
+        else
+        oddSum = oddSum + array[i];
+    }
+    return oddSum;
+   // Console.WriteLine("Сумма чётных элементов: " + evenSum);
+   // Console.WriteLine("Сумма нечётных элементов: " + oddSum);
+}
+/*
 int[] myArray = CreateRandomeArray(8, 100, 999);
 ShowArray(myArray);
 Console.Write(" -> " + CountElements(myArray));
+*/
+// Задача 36. Задать одномерный массив случайных чисел. Найти сумму элементов, стоящих на нечётных позициях.
+
+int[] myArray = CreateRandomeArray(4, 0, 30);
+ShowArray(myArray);
+Console.Write(" -> " + SumOfElements(myArray));
 
 
