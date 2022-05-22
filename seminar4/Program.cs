@@ -21,6 +21,7 @@ int num = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Сумма чисел : " + NaturalSum(num));
 */
 // Задача 2. Написать программу, которая принимает на вход число, и выдает сообщение сколько цифр в числе.
+/*
 int GetDigitAmount(int num)
 {
     int count = 0;
@@ -34,10 +35,42 @@ int GetDigitAmount(int num)
 Console.Write("Введите натуральное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Колчисетсво разрядов: " + GetDigitAmount(number));
+*/
+// Работа с массивами.
+//Метод создания случайного одномерного массива.
 
+Int[] CreateRandomeArray(int size)
+{
+    int[] array = new int[size];
 
+    for(int i = 0; i < size; i++)
+    {
+        array[i] = new Random().Next(-9, 10);
+    }
+    return array;
+}
 
+//метод создания массива вручную.
+/*
+Int[] CreateArray(int size)
+{
+    int[] array = new int[size];
 
+    for(int i = 0; i < size; i++)
+    {
+        Console.WriteLine("Введите" + i + "элемент");
+        array[i] = Convert.ToInt32(Console.ReadLine());
+    }
+    return array;
+}
+
+//Метод вывода массива
+void ShowArray(int[] array)
+{
+    for(int i = 0; i < array.Length; i++)
+    Console.Write(array[i] + " ");
+}
+*/
 
 // Задача 3. Задача написать программу, которая вычисляет факториал числа.
 /*int Factorial(int a)
@@ -58,4 +91,36 @@ Console.WriteLine("Колчисетсво разрядов: " + GetDigitAmount(n
 Console.Write("Введите натуральное число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Факториал числа " + num +" равен : " + Factorial(num));
+*/
+/*
+Int[] CreateArray(int size)
+{
+    int[] array = new int[size];
+
+    for(int i = 0; i < size; i++)
+    {
+        Console.WriteLine("Введите" + i + "элемент");
+        array[i] = Convert.ToInt32(Console.ReadLine());
+    }
+    return array;
+}
+
+//Метод вывода массива
+void ShowArray(int[] array)
+{
+    for(int i = 0; i < array.Length; i++)
+    Console.Write(array[i] + " ");
+}
+
+//Метод созания случайного одномрного массива.
+Int[] CreateRandomeArray(int size, int min, int max)
+{
+    int[] array = new int[size];
+
+    for(int i = 0; i < size; i++)
+    {
+        array[i] = new Random().Next(min, max);
+    }
+    return array;
+}
 */
