@@ -49,15 +49,45 @@ int SumOfElements(int[] array)
    // Console.WriteLine("Сумма чётных элементов: " + evenSum);
    // Console.WriteLine("Сумма нечётных элементов: " + oddSum);
 }
+
+int FindMaxElements(int[] array)
+{
+    int max=0;  
+    for(int i = 0; i < array.Length; i++)
+    {
+        if(array[i] > max)
+        max = array[i];
+    }
+    return max;
+}
+int FindMinElements(int[] array)
+{
+    int min=array[0];
+    for(int i = 0; i < array.Length; i++)
+    {
+        if(array[i] < min)
+        min = array[i];
+
+    }
+    return min;
+}
 /*
 int[] myArray = CreateRandomeArray(8, 100, 999);
 ShowArray(myArray);
 Console.Write(" -> " + CountElements(myArray));
 */
 // Задача 36. Задать одномерный массив случайных чисел. Найти сумму элементов, стоящих на нечётных позициях.
-
+/*
 int[] myArray = CreateRandomeArray(4, 0, 30);
 ShowArray(myArray);
 Console.Write(" -> " + SumOfElements(myArray));
+*/
+//Задача 38. Задать массив вещественных чисел. Найти разницу между максимальным и минимальным элементом массива.
+
+int[] myArray = CreateRandomeArray(8, 0, 30);
+int result = FindMaxElements(myArray)-FindMinElements(myArray);
+ShowArray(myArray);
+Console.Write(" -> " + result);
+
 
 
