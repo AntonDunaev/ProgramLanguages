@@ -38,7 +38,7 @@ Console.WriteLine("Колчисетсво разрядов: " + GetDigitAmount(n
 */
 // Работа с массивами.
 //Метод создания случайного одномерного массива.
-
+/*
 Int[] CreateRandomeArray(int size)
 {
     int[] array = new int[size];
@@ -49,6 +49,7 @@ Int[] CreateRandomeArray(int size)
     }
     return array;
 }
+*/
 
 //метод создания массива вручную.
 /*
@@ -92,8 +93,8 @@ Console.Write("Введите натуральное число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Факториал числа " + num +" равен : " + Factorial(num));
 */
-/*
-Int[] CreateArray(int size)
+
+int[] CreateArray(int size)
 {
     int[] array = new int[size];
 
@@ -113,14 +114,34 @@ void ShowArray(int[] array)
 }
 
 //Метод созания случайного одномрного массива.
-Int[] CreateRandomeArray(int size, int min, int max)
+int[] CreateRandomeArray(int size, int min, int max)
 {
     int[] array = new int[size];
 
     for(int i = 0; i < size; i++)
     {
-        array[i] = new Random().Next(min, max);
+        array[i] = new Random().Next(min, max+1);
     }
     return array;
 }
-*/
+
+void FindSumOfElements(int[] array)
+{
+    int plusSum = 0;
+    int minusSum = 0;
+
+    for(int i = 0; i < array.Length; i++)
+    {
+        if(array[i] > 0)
+        plusSum += array[i];
+        else
+        minusSum += array[i];
+    }
+    Console.WriteLine("Сумма положительных элементов: " + plusSum);
+    Console.WriteLine("Сумма отрицательных элементов: " + minusSum);
+    
+}
+
+
+int[] myArray = CreateRandomeArray(8, 0, 1);
+ShowArray(myArray);
