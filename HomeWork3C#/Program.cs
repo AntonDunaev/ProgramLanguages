@@ -21,6 +21,7 @@ string num = Console.ReadLine();
 TestPolindrom(num);
 */
 // Задача. Написать программу, которая находит расстояние между двумя точками в 3D пространстве.
+/*
 double FindDistance(int x1, int y1, int z1, int x2, int y2, int z2)
 {
     return Math.Sqrt((x2-x1)*(x2-x1) + (y2 - y1)*(y2 - y1) + (z2-z1)*(z2-z1));    
@@ -39,3 +40,18 @@ Console.Write("Введите значение по оси z для второй
 int zSecondDot = Convert.ToInt32(Console.ReadLine());
 double dist = FindDistance(xFirstDot, yFirstDot, zFirstDot, xSecondDot, ySecondDot, zSecondDot);
 Console.WriteLine("Расстояние от первой точки до второй " + dist);
+*/
+//Задача 23. Написать программу, которая принимает на вход число N() и выдает таблицу кубов от 1 до N.
+void qubeNumber(int x)
+{
+    int count = 1;
+    Console.Write(x + " -> ");
+    while(count <= x)
+    {
+    Console.Write(count*count*count + ", ");
+    count ++;
+    }
+}
+Console.Write("Введите натуральное число ");
+int num = Convert.ToInt32(Console.ReadLine());
+qubeNumber(num);
