@@ -89,24 +89,37 @@ void FindNum(int[] array, int num)
    }
  }
 }
+void CountElementsInDiaposon(int[] array, int min, int max)
+{
+    int count = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if(array[i] > min && array[i] < max)
+        count ++;
+    }
+     Console.WriteLine(count);
+}
+
 
 //Задача 1. Создать массив, написать программу, которая скажет присутствует ли заданное число в массиве.
+/*
 int[] myArray = CreateRandomeArray(10, -9, 10);
  Console.WriteLine("Введите число от -9 до 10 для поиска в массиве");
 int number = Convert.ToInt32(Console.ReadLine());
 FindNum(myArray, number);
 ShowArray(myArray);
-
-
-
-
-
-
-
+*/
 
 
 //Задача 2.Создать одномерный массив из 15 случайных чисел, 
 //после чего найти количество элементов, находящихся в отрезке от 10  до 99.
+
+int[] myArray = CreateRandomeArray(15, -999, 999);
+ShowArray(myArray);
+Console.WriteLine();
+Console.Write("В данном массиве, числа от 10 до 99, встречаются ");
+CountElementsInDiaposon(myArray, 10, 99);
+Console.WriteLine(" раз");
 
 
 
