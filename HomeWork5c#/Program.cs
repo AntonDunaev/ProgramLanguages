@@ -76,13 +76,29 @@ void DegreeOfNumber(int a, int b)
    }
    Console.Write(degNum);
 }
+void ShowSumm(int numbers)
+{
+  int sum = 0;
+  //int length = numbers.Length;
+ // for(int i = 0; i < numbers.Length; i++)
+//{
+  while (numbers >0)
+  {
+      sum += numbers % 10;
+     numbers = numbers / 10;
+  }
+     Console.Write(sum);
+}
 
 // Задача 1. Написать цикл который принимает на вход два числа (А и В) и возводит число А в натуральную степень В.
-
+/*
 Console.Write("Введите число: ");
 int x = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите значение степени, в котороую вы хотите произвести чилсо: ");
 int y = Convert.ToInt32(Console.ReadLine());
 DegreeOfNumber(x, y);
-
+*/
 // Задача 2. Написать программу, которая принимает на вход число и выдаёт сумму цифр в числе.
+Console.WriteLine("Введите целое число: ");
+int x = Convert.ToInt32(Console.ReadLine());
+ShowSumm(x);
