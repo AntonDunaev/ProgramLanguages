@@ -79,10 +79,7 @@ void DegreeOfNumber(int a, int b)
 void ShowSumm(int numbers)
 {
   int sum = 0;
-  //int length = numbers.Length;
- // for(int i = 0; i < numbers.Length; i++)
-//{
-  while (numbers >0)
+   while (numbers >0)
   {
       sum += numbers % 10;
      numbers = numbers / 10;
