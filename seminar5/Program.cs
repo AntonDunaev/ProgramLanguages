@@ -73,22 +73,18 @@ int[] ChangeNumbers(int[] array)
     array[i] *= (-1);
     return array;
 }
-void FindNum(int[] array, int num)
+string FindNum(int[] array, int num)
 {
  for(int i = 0; i < array.Length; i++)
  {
  if(num == array[i])
  {
- Console.WriteLine("Число " + num + " присутствует в массиве.");
- break;
+ return "Yes";
  }
- else
- {
-  Console.WriteLine("Число " + num + " отсутствует в массиве.");
-  break;
-   }
  }
-}
+ return "No";
+ }
+
 void CountElementsInDiaposon(int[] array, int min, int max)
 {
     int count = 0;
@@ -99,6 +95,22 @@ void CountElementsInDiaposon(int[] array, int min, int max)
     }
      Console.WriteLine(count);
 }
+int[] NumbersMultiplication(int[] array)
+{
+int newSize = array.Length / 2;
+int[] newArray = new int[newSize];
+for(int i = 0,  j = array.Length - 1; i < newSize; i++, j--)
+{
+    newArray[i] = array[i] * array[j];
+}
+return newArray;
+}
+
+
+
+
+
+
 
 
 //Задача 1. Создать массив, написать программу, которая скажет присутствует ли заданное число в массиве.
@@ -113,16 +125,19 @@ ShowArray(myArray);
 
 //Задача 2.Создать одномерный массив из 15 случайных чисел, 
 //после чего найти количество элементов, находящихся в отрезке от 10  до 99.
-
+/*
 int[] myArray = CreateRandomeArray(15, -999, 999);
 ShowArray(myArray);
 Console.WriteLine();
 Console.Write("В данном массиве, числа от 10 до 99, встречаются ");
 CountElementsInDiaposon(myArray, 10, 99);
 Console.WriteLine(" раз");
-
-
-
+*/
 
 //Задача 3. Найти произведение пар чисел (первое и последнее, второе и предпоследнее и т.д.)
 // одномерного массива.
+int[] myArray = CreateRandomeArray(8, 1, 9);
+ShowArray(myArray);
+int[] newArr = NumbersMultiplication(myArray);
+Console.WriteLine();
+ShowArray(newArr);
