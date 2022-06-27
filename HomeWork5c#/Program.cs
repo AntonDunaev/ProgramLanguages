@@ -86,7 +86,21 @@ void ShowSumm(int numbers)
   }
      Console.Write(sum);
 }
+void CreateConsoleArray(int size)
+{
+    int[] array = new int[size];
 
+    for(int i = 0; i < size; i++)
+    {
+        Console.WriteLine("Введите элемент массива с индексом: " + i);
+        array[i] = Convert.ToInt32(Console.ReadLine());
+    }
+    for(int i = 0; i < 5; i++)
+    Console.Write(array[i]);
+    Console.WriteLine();
+    for(int i = 5; i < 8; i++)
+    Console.Write(array[i]);
+}
 // Задача 1. Написать цикл который принимает на вход два числа (А и В) и возводит число А в натуральную степень В.
 /*
 Console.Write("Введите число: ");
@@ -96,6 +110,12 @@ int y = Convert.ToInt32(Console.ReadLine());
 DegreeOfNumber(x, y);
 */
 // Задача 2. Написать программу, которая принимает на вход число и выдаёт сумму цифр в числе.
+/*
 Console.WriteLine("Введите целое число: ");
 int x = Convert.ToInt32(Console.ReadLine());
 ShowSumm(x);
+*/
+//Задача 3.Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
+CreateConsoleArray(8);
+
+
