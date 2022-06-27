@@ -1,6 +1,5 @@
 ﻿
-//int[] CreateRandomeArray(int size, int min, int max)
-/*
+int[] CreateRandomeArray(int size, int min, int max)
 {
     int[] array = new int[size];
 
@@ -68,8 +67,6 @@ int FindMinElements(int[] array)
     }
     return min;
 }
-*/
-// Задача 1. Написать цикл который принимает на вход два числа (А и В) и возводит число А в натуральную степень В.
 void DegreeOfNumber(int a, int b)
 {
     int degNum = 1;
@@ -79,8 +76,13 @@ void DegreeOfNumber(int a, int b)
    }
    Console.Write(degNum);
 }
+
+// Задача 1. Написать цикл который принимает на вход два числа (А и В) и возводит число А в натуральную степень В.
+
 Console.Write("Введите число: ");
 int x = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите значение степени, в котороую вы хотите произвести чилсо: ");
 int y = Convert.ToInt32(Console.ReadLine());
 DegreeOfNumber(x, y);
+
+// Задача 2. Написать программу, которая принимает на вход число и выдаёт сумму цифр в числе.
