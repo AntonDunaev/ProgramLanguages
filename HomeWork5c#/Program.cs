@@ -95,7 +95,7 @@ void CreateConsoleArray(int size)
         Console.WriteLine("Введите элемент массива с индексом: " + i);
         array[i] = Convert.ToInt32(Console.ReadLine());
     }
-    for(int i = 0; i < 5; i++)
+    for(int i = 0; i < 5; i++)  // эти строки написаны, чтобы вывод был в 2 строки, как в задании.
     Console.Write(array[i]);
     Console.WriteLine();
     for(int i = 5; i < 8; i++)
