@@ -53,6 +53,7 @@ bool IsTriangExist(int a, int b, int c) // метод определяет су�
 }
 */
 // написать программу, которая принимает на вход 1 массив, и возвращает его развёрнутую версию.
+/*
 int[] CreateRandomeArray(int size, int min, int max)
 {
     int[] array = new int[size];
@@ -63,11 +64,13 @@ int[] CreateRandomeArray(int size, int min, int max)
     }
     return array;
 }
+*/
 void ShowArray(int[] array)
 {
     for(int i = 0; i < array.Length; i++)
     Console.Write(array[i] + " ");
 }
+/*
 int[] TurnArray(int[] array) // метод разворота массива
 {
     int[] tempArray = CreateRandomeArray(array.Length, 0, 1);
@@ -81,8 +84,22 @@ Console.WriteLine();
 int[] secondArray = TurnArray(newArray);
 ShowArray(secondArray);
 
-
+*/
 
 // написать программу, которая принимает натуральное число, и возвращает равное числу количество чисел фибоначи.
-     
+ int[] GetFibonacci(int num)
+ {
+     int[] array = new int[num];
+     array[0] = 0;
+     array[1] = 1;
+     for (int i = 2; i < num; i ++)
+     {
+        array[i] = array[i-1] + array[i-2];
+     }
+    return array;
+     }
+int[] fiboArray = GetFibonacci(10);
+ShowArray(fiboArray);
+
+
 
