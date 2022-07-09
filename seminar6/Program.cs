@@ -42,7 +42,7 @@ Console.WriteLine();
 PrintMatrix(table);
 */
 // семинар
-
+/*
 bool IsTriangExist(int a, int b, int c) // метод определяет существует ли треугольник со сторонами заданного размера.
 {
     if(a < b + c || b < a + c || c < a + b)
@@ -51,5 +51,38 @@ bool IsTriangExist(int a, int b, int c) // метод определяет су�
     }
     else return false;
 }
+*/
+// написать программу, которая принимает на вход 1 массив, и возвращает его развёрнутую версию.
+int[] CreateRandomeArray(int size, int min, int max)
+{
+    int[] array = new int[size];
+
+    for(int i = 0; i < size; i++)
+    {
+        array[i] = new Random().Next(min, max+1);
+    }
+    return array;
+}
+void ShowArray(int[] array)
+{
+    for(int i = 0; i < array.Length; i++)
+    Console.Write(array[i] + " ");
+}
+int[] TurnArray(int[] array) // метод разворота массива
+{
+    int[] tempArray = CreateRandomeArray(array.Length, 0, 1);
+    for(int i = 0, j = array.Length - 1; i < array.Length; i++, j--)
+    tempArray[j] = array[i];
+    return tempArray;
+}
+int[] newArray = CreateRandomeArray(8, -10, 10);
+ShowArray(newArray);
+Console.WriteLine();
+int[] secondArray = TurnArray(newArray);
+ShowArray(secondArray);
+
+
+
+// написать программу, которая принимает натуральное число, и возвращает равное числу количество чисел фибоначи.
      
 
