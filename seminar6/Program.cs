@@ -10,6 +10,7 @@ for( int rows = 0; rows < 2; rows++)
     }
 }
 */
+/*
 void PrintMatrix(int[,] matr)
 {
  for( int rows = 0; rows < matr.GetLength(0); rows++)
@@ -39,5 +40,16 @@ PrintMatrix(table);
 FillMatrixRandome(table);
 Console.WriteLine();
 PrintMatrix(table);
+*/
+// семинар
 
+bool IsTriangExist(int a, int b, int c) // метод определяет существует ли треугольник со сторонами заданного размера.
+{
+    if(a < b + c || b < a + c || c < a + b)
+    { 
+        return true;
+    }
+    else return false;
+}
+     
 
